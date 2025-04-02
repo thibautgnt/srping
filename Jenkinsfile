@@ -6,9 +6,11 @@ pipeline {
         DOCKER_CREDENTIALS = 'docker-hub'
     }
 
-    tools {
-        jdk 'JDK-17'
-    }
+    // Suppression de la section tools spécifique
+    // Si vous configurez un JDK dans Jenkins, vous pouvez utiliser:
+    // tools {
+    //     jdk 'NOM-DE-VOTRE-JDK-DANS-JENKINS'
+    // }
 
     stages {
         stage('Checkout Code') {
